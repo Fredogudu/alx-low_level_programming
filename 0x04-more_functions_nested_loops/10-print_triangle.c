@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_square - prints hashtags to make a square
+ * print_triangle - prints triangle
  * @size: limit
  *
  * Return: void
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
 int i, j;
 
@@ -17,6 +17,9 @@ for (i = 0; i < size; i++)
 {
 for (j = 0; j < size; j++)
 {
+if ((size - i - 1) > j)
+_putchar(' ');
+else
 _putchar('#');
 }
 _putchar('\n');
